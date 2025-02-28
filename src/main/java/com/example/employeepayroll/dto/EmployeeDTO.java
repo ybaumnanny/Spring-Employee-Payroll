@@ -3,13 +3,11 @@ package com.example.employeepayroll.dto;
 
 import jakarta.validation.constraints.NotBlank;
 import jakarta.validation.constraints.Pattern;
-import lombok.AllArgsConstructor;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import lombok.*;
 
-@Data  // Generates Getters, Setters, toString(), equals(), and hashCode()
+@Getter
+@Setter// Generates Getters, Setters, toString(), equals(), and hashCode()
 @NoArgsConstructor
-@AllArgsConstructor
 public class EmployeeDTO {
     private Long id;  // Use Long to match with the Entity
 
